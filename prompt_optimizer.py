@@ -315,7 +315,7 @@ Retorne JSON:
         if tests:
             return tests.prompt_id, tests.prompt_content
         
-        # Fallback: retorna o primeiro
+        ## Fallback: retorna o primeiro
         return list(self.prompts.items())[0]
     
     def get_statistics(self) -> Dict:
